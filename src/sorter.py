@@ -19,3 +19,4 @@ def sort_files(folder):
                 target_dir = os.path.join(folder, EXTENSION_MAP[ext])
                 os.makedirs(target_dir, exist_ok=True)       # создаём папку, если нет
                 shutil.move(source, os.path.join(target_dir, entry))  # перемещаем файл
+    #
